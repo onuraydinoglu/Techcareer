@@ -1,0 +1,126 @@
+.testimonial-section {
+    background-color: #F0F0F0;
+    padding: 50px 0;
+}
+
+.testimonial-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    max-height: 200px; 
+    overflow: hidden;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.testimonial-card h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+    overflow-y: auto; /* Dikey kaydırma */
+    max-height: 90px; /* Kaydırma çubuğu için maksimum yükseklik */
+    padding-right: 10px; /* Scroll bar'a alan bırakmak için padding */
+}
+
+/* Scrollbar stilini özelleştir */
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d8d8d8;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.view-all-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.view-all-button button {
+    background-color: #28a745;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.view-all-button button:hover {
+    background-color: #218838;
+}
+
+/* Testimonial Kartının Üst Kısmına Ok Butonları */
+.nav-buttons {
+    position: absolute;
+    top: -50px; /* Kartın üst kısmına yerleştirilmiş */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.nav-buttons button {
+    background-color: white; /* Beyaz dış arka plan */
+    color: #28a745; /* Yeşil ok */
+    border: 2px solid #28a745; /* Yeşil çerçeve */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-buttons button:hover {
+    background-color: #28a745; /* Hover için yeşil arka plan */
+    color: white; /* Ok rengi beyaz olacak */
+    transform: scale(1.1); /* Hafif büyüme efekti */
+}
+
+.nav-buttons button:active {
+    transform: scale(0.95); /* Basıldığında küçülme efekti */
+}
+
+/* Sol Ok (Yeni Sol Ok İkonu) */
+.nav-buttons .prev {
+    color: #45c011; /* Sol ok için yeşil ton */
+    font-size: 22px; /* Ok boyutu */
+}
+
+/* Sağ Ok (Yeni Sağ Ok İkonu) */
+.nav-buttons .next {
+    color: #19c90d; /* Sağ ok için yeşil */
+    font-size: 22px; /* Ok boyutu */
+}
+

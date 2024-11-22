@@ -1,0 +1,169 @@
+/* Genel stil ayarları */
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed; /* Sayfanın üst kısmına sabitlemek için fixed kullanıldı */
+    top: 10px; /* Sayfanın üst kısmına 10px uzaklık */
+    left: 50%;
+    transform: translateX(-50%); /* Ortalamak için */
+    background-color: #000;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.4;
+    z-index: 1050; /* Tooltip'in üstte kalması için yüksek bir z-index */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap;
+    width: auto;
+    max-width: 400px;
+}
+
+/* Tooltip Görünürken */
+.job-link:hover + .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tooltip Ok İkonu */
+.tooltip-text::before {
+    content: '';
+    position: absolute;
+    bottom: 100%; /* Tooltip'in üstünde yer alacak */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent black transparent; /* Siyah yukarı ok */
+}
+* {
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+body {
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #F8F9FA;
+}
+header input:hover {
+    border-color: rgb(41, 51, 73);
+    box-shadow: 0 0 5px #415173;
+}
+input::placeholder {
+    font-weight: 400;
+    color: #293349;
+}
+.search-wrapper {
+    position: relative;
+    opacity: 0.8;
+}
+.search-wrapper input {
+    padding-left: 35px;
+}
+.search-wrapper .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #181717;
+}
+header ul li {
+    list-style-type: none;
+    font-weight: 400;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    color: #1D1D1D ;
+    margin-left: 8px;
+}
+.nav-link:hover {
+    color: #00c26d;
+}
+.loginbtn {
+    background-color: #00c26d;
+    border: none;
+    width: 120px;
+    height: 36px;
+    padding: 6px 6px;
+    font-weight: 500;
+}
+.loginbtn:hover {
+    background-color: #02D076;
+}
+
+/* Etkinlikler menüsü için stil */
+.nav-item.dropdown .dropdown-menu {
+    display: none; /* Varsayılan olarak gizlenmiş */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1050;
+    border: none; /* Kenar çizgisini kaldır */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.dropdown-menu li a:hover{
+    color: #02D076;
+    background-color: white;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Üzerine gelindiğinde göster */
+}
+/* Dropdown açılır menüsünde ok simgesini gizle */
+.nav-item.dropdown .dropdown-toggle::after {
+    display: none;
+}
+.nav-item.dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    border-top: 4px solid #00c26d;
+}
+
+/* Tooltip için Genel Ayarlar */
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 120%; /* Linkin hemen altında */
+    left: 50%;
+    transform: translateX(-50%); /* Ortalamak için */
+    background-color: #000; /* Siyah arka plan */
+    color: #fff; /* Beyaz yazı */
+    text-align: left; /* Yazıyı sola hizalar */
+    display: flex; /* Flexbox kullanımı */
+    align-items: center; /* Dikeyde ortalama */
+    justify-content: flex-start; /* Yazıyı sola hizalar */
+    padding: 10px 20px; /* Dikeyde dar, yatayda geniş padding */
+    border-radius: 8px;
+    font-size: 12px;
+    line-height: 1.4; /* Satır yüksekliği */
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    white-space: nowrap; /* Tek satır olarak tutar */
+    width: auto; /* İçeriğe göre genişler */
+    max-width: 400px; /* Kutucuk genişliğini arttırdım */
+}
+
+/* Tooltip Görünürken */
+.job-link:hover + .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Tooltip Ok İkonu */
+.tooltip-text::before {
+    content: '';
+    position: absolute;
+    bottom: 100%; /* Tooltip'in üstünde yer alacak */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent transparent black transparent; /* Siyah yukarı ok */
+}

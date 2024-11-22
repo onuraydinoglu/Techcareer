@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+    
+  /* Footer */
+  .f-bg {
+    background-color: #f0f0f0;
+  }
+  
+  .f-header {
+    font-size: 0.875rem;
+    letter-spacing: 0.17px;
+    font-weight: 400;
+    line-height: 1.43;
+    color: #878787;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+  
+  .nav-item {
+    padding: 6px 0;
+  }
+  
+  .f-item {
+    text-decoration: none;
+    color: #1d1d1d;
+    min-width: 64px;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  
+  .f-item:hover {
+    border-bottom: 1px solid black;
+  }
+  
+  .text-sir{
+    font-size: 34px;
+    margin-bottom: 16px;
+  }
+  
+  .text-bir{
+    font-size: 24px;
+    margin-bottom: 14px !important;
+  }
+  
+  .s-item-t{
+    color: #00C26D;
+    margin-top: 16px;
+  }
+  
+  .s-item-info{
+    text-decoration: none;
+    color: #FFF;
+  }
+  
+  .f-item-lg {
+    text-decoration: none;
+    color: #1d1d1d;
+    min-width: 64px;
+    font-weight: 500;
+    letter-spacing: 0.025rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  
+  .list-leg {
+    font-size: 1rem;
+    letter-spacing: 0.15px;
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 500;
+    color: #1d1d1d;
+    text-transform: uppercase;
+  }
+  
+  .list-text {
+    font-size: 0.75rem;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    line-height: 1.66;
+    color: #878787;
+  }
+  
+  .small {
+    font-size: 10px !important;
+    color: #878787;
+    text-align: justify !important;
+  }
+  
+  .btn-social {
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center !important;
+    justify-content: center !important;
+    border: 1px solid #c4bdbd !important;
+    border-radius: 50% !important;
+    -webkit-border-radius: 50% !important;
+    -moz-border-radius: 50% !important;
+    -ms-border-radius: 50% !important;
+    -o-border-radius: 50% !important;
+}
+  
+  .btn-social:hover {
+    border: 1px solid black;
+  }

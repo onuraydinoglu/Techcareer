@@ -1,0 +1,184 @@
+/* Navigasyon */
+.navigation {
+  display: flex;
+  justify-content: space-between; /* Butonlar arasında eşit boşluk bırakıyoruz */
+  margin-bottom: 10px; /* Kartlarla butonlar arasındaki boşluk azaldı */
+  width: 1,152px; /* Kategori kısmı için genişlik */
+  height: 80px; /* Kategori kısmının yüksekliği */
+  padding-top: 12px; /* Üst padding */
+  padding-bottom: 12px; /* Alt padding */
+  gap: 8px; /* Butonlar arasındaki boşluk */
+  border-bottom: 1px solid #ddd; /* Alt sınır */
+}
+
+/* Tek Kategori Butonu */
+.nav-button {
+  position: relative;
+  text-align: center;
+  width: 346px; /* Kategori butonlarının genişliği, kartların genişliğiyle aynı olacak */
+  height: 44px; /* Tek kategori butonunun yüksekliği */
+  background-color: #e0e0e0;
+  border: none;
+  border-top-left-radius: 16px; /* Üst sol köşe kavisli */
+  border-top-right-radius: 16px; /* Üst sağ köşe kavisli */
+  padding-right: 10px; /* Sağ padding */
+  padding-left: 10px; /* Sol padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Hover efektleri */
+  gap: 16px; /* İçerik arasındaki boşluk */
+}
+
+/* Kategori Butonları Hover Durumu */
+.nav-button:hover {
+  background-color: #00c853;
+  color: #fff;
+}
+
+/* Aktif Buton */
+.nav-button.active {
+  background-color: #00c853;
+  color: #fff;
+}
+
+.active-underline {
+  width: 100%;
+  height: 4px;
+  background-color: #00c853;
+  position: absolute;
+  bottom: -6px; /* Çizgi ile buton arasındaki boşluk */
+  margin-top: 5px;
+}
+
+.active-underline-white {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -4px; /* Beyaz çizgi için pozisyon */
+}
+
+/* Kategori İkonları */
+.category-icon {
+  margin-right: 8px; /* İkon ile metin arasına boşluk ekledik */
+  font-size: 1.5em;  /* İkon boyutunu büyüttük */
+}
+
+/* Kategori İçi Yazı Alanı */
+.nav-button-text {
+  width: 262px; /* Yazı alanının genişliği */
+  height: auto; /* Yükseklik otomatik olarak ayarlanacak */
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* İçerik arasındaki boşluk */
+}
+
+/* Kartlar */
+.event-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kart yan yana */
+  gap: 20px; /* Kartlar arasındaki boşluğu 8px yapıyoruz */
+  margin-top: 1px;
+  width: 100%; /* Kartların kapsayıcı genişliği %100 olacak */
+}
+
+/* Eğitim Kartları */
+.event-card {
+  background-color: #fff;
+  border-radius: 16px; /* Kartlar için kavisli köşeler 16px */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Daha belirgin gölge */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease; /* Hover animasyonu */
+  padding-bottom: 8px; /* Alt boşluğu 8px yapıyoruz */
+  box-sizing: border-box; /* Padding'in boyutları etkilememesi için */
+}
+
+.event-card:hover {
+  transform: translateY(-5px); /* Hover efekti ile hafif yükselme */
+}
+
+.event-image {
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 16px; /* Üst köşe kavisli */
+  border-top-right-radius: 16px; /* Üst köşe kavisli */
+}
+
+.event-content {
+  padding: 10px 15px;
+  flex-grow: 1; /* İçeriğin mümkün olduğunca büyümesini sağlıyoruz */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* İçeriği yukarıya ve aşağıya yerleştir */
+}
+
+h4 {
+  font-size: 1.1em;
+  margin: 0 0 10px 0; /* Başlık için alt boşluk ekledik */
+  font-weight: bold;
+}
+
+p {
+  font-size: 0.9em;
+  margin: 0 0 10px 0; /* Paragraf için alt boşluk ekledik */
+  color: #555; /* Metin rengini biraz daha yumuşattık */
+}
+
+.deadline {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.apply-button {
+  padding: 4px 24px;
+  background-color: #00c853;
+  color: #fff;
+  border: none;
+  border-radius: 15px; /* Kavisli buton */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Hover efekti */
+  align-self: center; /* Butonun ortalanmasını sağlıyoruz */
+}
+
+.apply-button:hover {
+  background-color: #007b3d; /* Hoverda daha koyu yeşil */
+}
+
+/* "Tüm Etkinlikleri Gör" */
+.see-all-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.see-all-button {
+  padding: 15px;
+  width: 300px;
+  background-color: #00c853;
+  color: #fff;
+  border: none;
+  border-radius: 20px;  /* Kavisli buton */
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;  /* Alt çizgiyi kaldırır */
+}
+
+.see-all-button:hover {
+  background-color: #007b3d; /* Hoverda daha koyu yeşil */
+}

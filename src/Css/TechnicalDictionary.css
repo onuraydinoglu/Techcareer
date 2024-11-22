@@ -1,0 +1,118 @@
+/* Bileşene özel sınıf */
+.technical-dictionary {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #f6f6f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Kapsayıcı ayarları */
+  .technical-dictionary .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+  }
+  
+  /* İçerik düzeni */
+  .technical-dictionary .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .technical-dictionary .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .technical-dictionary .text-content {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .technical-dictionary .text-content h1 {
+    font-size: 34px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: "SansSerif";
+    font-weight: 700;
+  }
+  
+  .technical-dictionary .text-content h1 span {
+    font-size: 34px;
+    color: #28a745;
+    font-family: "SansSerif";
+    font-weight: 700;
+  }
+  
+  .technical-dictionary .search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    width: 220px;
+    height: 49px;
+    border-radius: 18px 0 0 18px;
+  }
+  
+  .technical-dictionary .search-button {
+    width: 22px;
+    background-color: #f6f6f6;
+    height: 47px;
+    border: none;
+    border-radius: 24px 0 0 24px;
+  }
+  
+  .technical-dictionary .search-bar input {
+    flex: 1;
+    padding: 0 10px;
+    border: 1px solid #f0f0f0;
+    background-color: #f0f0f0;
+    font-size: 12px;
+  }
+  
+  .technical-dictionary .btn {
+    background-color: #00c26d;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 139px;
+    height: 29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    text-decoration-color: #00c26d;
+    font-weight: normal;
+  }
+  
+  .technical-dictionary .btn:hover {
+    background-color: #218838;
+  }
+  
+  .technical-dictionary .redirection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .technical-dictionary .redirection p {
+    text-align: center;
+    max-width: 552px;
+  }
+  

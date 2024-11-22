@@ -1,0 +1,128 @@
+/* Kartın genel stil ayarları */
+.job-card {
+    border-radius: 16px;
+    max-height: 300px; /* Kartın maksimum yüksekliğini küçültün */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-body {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    margin-right: 5px;
+  }
+  
+  .mt-auto {
+    margin-top: auto; /* Butonu yukarı çıkarmak için boşluğu ayarlayın */
+  }
+  
+  .card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1rem;
+    height: 2.5em; /* İki satır yüksekliği için */
+    line-height: 1.25em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+  }
+  
+  .job-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 16px;
+  }
+  
+  .company-name {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+    color: #6c757d;
+  }
+  
+  .d-flex.align-items-center span {
+    font-size: 0.85rem;
+  }
+  
+  .mt-auto {
+    margin-top: auto;
+  }
+  
+  .btn-success {
+    font-size: 0.875rem;
+    padding: 6px 12px;
+    border-radius: 16px;
+    background-color: #218838;
+  }
+
+  .location-icon {
+    margin-top: 32px !important;
+    width: 20px; /* İkonun genişliğini ayarlayın */
+    height: 20px; /* İkonun yüksekliğini ayarlayın */
+    object-fit: contain;
+  }
+  .view-all-button {
+  display: flex;
+  justify-content: center;
+  margin-top: auto; /* Butonu kartın altına itmek için */
+  padding-bottom: 10px; /* Alt kısımdan biraz boşluk bırakmak için */
+}
+
+.view-all-button button {
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.view-all-button button:hover {
+  background-color: #218838;
+}
+
+.apply-button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Tüm İlanları Gör butonu rengi */
+    color: #fff;
+    border: none;
+    border-radius: 16px; /* Kavisli buton */
+    cursor: pointer;
+    font-weight: normal; /* Yazı stili Tüm İlanları Gör ile uyumlu */
+    font-size: 16px; /* Yazı boyutu Tüm İlanları Gör ile uyumlu */
+    font-family: 'Arial', sans-serif; /* Tüm İlanları Gör ile aynı font */
+    text-align: center;
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    transition: background-color 0.3s ease; /* Hover efekti */
+}
+
+.apply-button:hover {
+    background-color: #218838; /* Hover rengi Tüm İlanları Gör ile uyumlu */
+}
+/* Sağ üst köşedeki ikon için stil */
+.top-right-icon {
+    /* position: absolute; */
+    top: 10px; /* Üst kenardan 10px mesafe */
+    right: 10px; /* Sağ kenardan 10px mesafe */
+    z-index: 10; /* Üstte kalması için */
+}
+
+.bookmark-icon {
+    width: 24px; /* İkon boyutu */
+    height: 24px;
+    cursor: pointer; /* Tıklanabilir olması için */
+}
+
+  

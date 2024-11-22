@@ -1,0 +1,81 @@
+.custom-carousel-container {
+    width: 1500px;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-bottom: 90px;
+    margin-top: 50px;
+  }
+  
+  .carousel .slide-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .carousel img {
+    width: 1270px !important;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .custom-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    background: rgba(255, 255, 255, 0.8); /* Yarı saydam arka plan */
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 50%;
+  }
+  
+  .custom-caption h3 {
+    font-size: 24px;
+    color: #3b3b3b;
+    margin: 0 0 10px;
+  }
+  
+  .custom-caption p {
+    font-size: 16px;
+    color: #707070;
+    margin: 0;
+  }
+  
+  .carousel-indicators {
+    position: absolute;
+    bottom: -70px;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+    background-color: #fff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  .carousel-indicators-color{
+    margin-top: -200px;
+    height: 200px;
+    background-color: #293349;
+    margin-bottom: 50px;
+  }
+
+  .sol{
+    position: absolute;
+    top: 120px;
+    left: 195px;
+  }
+
+  .sag{
+    position: absolute;
+    top: 115px;
+    right: 185px;
+  }

@@ -1,0 +1,148 @@
+/* Kart Konteyneri */
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 68px;
+  margin-bottom: 40px;
+}
+
+/* İlk Kartın Altına Kalın Yeşil Çerçeve */
+.circle-card.first-card {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 15px solid #28a745; /* Alt kısma kalın yeşil çerçeve ekledik */
+}
+
+/* İkinci Kartın Üstüne Kalın Yeşil Çerçeve */
+.circle-card.second-card {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Konumlandırmayı düzgün yapabilmek için */
+  border-top: 15px solid #28a745; /* Üst kısma kalın yeşil çerçeve ekledik */
+}
+
+/* Üçüncü Kartın Altına Kalın Yeşil Çerçeve (İlk Kartla Aynı) */
+.circle-card.third-card {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 15px solid #28a745; /* Alt kısma kalın yeşil çerçeve ekledik */
+}
+
+/* Diğer kartlar ve genel stiller */
+.circle-card {
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* İkonlar */
+.icon {
+  margin-bottom: 15px;
+}
+
+.icon i {
+  font-size: 35px; /* İkon boyutunu belirledik */
+  color: #000; /* İkon rengi siyah */
+}
+
+/* Kart Başlıkları */
+.circle-card h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #000; /* Siyah renk */
+}
+
+/* Kart Paragrafları */
+.circle-card p {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+/* İstatistikler */
+.statistics {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #28a745;
+}
+
+.stat p {
+  font-size: 1.1rem;  /* Font boyutunu arttırdık */
+  font-weight: 500;
+  color: #333;
+}
+
+/* Başlık */
+.title {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: left;
+  margin-left: 310px;  /* İlk kartın soldan başlama hizasına daha yakın olacak şekilde ayarlandı */
+  margin-top: 0;
+}
+
+
+
+/* Kartlara Hover efekti */
+.circle-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* İstatistikler Responsive Düzenleme */
+@media (max-width: 768px) {
+  .statistics {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .circle-card {
+    width: 200px;
+    height: 200px;
+  }
+}
